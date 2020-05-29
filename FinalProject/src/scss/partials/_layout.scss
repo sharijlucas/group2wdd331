@@ -5,10 +5,7 @@ $break-medium: 31em; // 31em 480px min-width
 $break-large:60em; // 60em 900px min-width   
 
 // media queries
-//breakpoints
-$break-small: min-width
-$break-medium: 
-$break-large: 60em; // 60em 900px min-width
+
 //this may be out of order and we need small last. Watch loom video Bro. B. sent as feedback for Week03.
 @mixin MQ($break) {
   @if $break == break-small {
