@@ -1,0 +1,22 @@
+@import 'partials/reset';
+@import 'partials/layout';
+@import 'partials/colors';
+@import 'partials/typography';
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background-color: $color-4;
+}
+
+//sample for how we changed partial _layout.scss
+// .cd-logo {
+//     /* logo box style */
+//     background-color: $color-1;
+//     width: 120px;
+  
+//     //MQ = media query
+//     @include MQ(break-medium) {
+//       width: 180px;
+//     }
+//   }
