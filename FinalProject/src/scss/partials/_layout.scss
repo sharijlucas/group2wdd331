@@ -1,0 +1,29 @@
+// breakpoints
+   
+$break-small: 20em;  // 20em 320px    
+$break-medium: 31em; // 31em 480px min-width    
+$break-large:60em; // 60em 900px min-width   
+
+// media queries
+//I did not finish deleting the information from the next few lines that I copied and pasted on lines 3 4 and 5 above.
+
+//this may be out of order and we need small last. Watch loom video Bro. B. sent as feedback for Week03.
+@mixin MQ($break) {
+  @if $break == break-small {
+   @media only screen and (min-width: $break-small) { @content; } 
+  }
+  @else if $break == break-medium {
+   @media only screen and (min-width: $break-medium) { @content; } 
+  }
+  @else if $break == break-large {
+   @media only screen and (min-width: $break-large) { @content; } 
+  }
+}
+
+// super light grid - it works with the .cd-container class inside style.scss
+
+// @mixin column($percentage, $float-direction:left) {
+//   width: 100% * $percentage;
+//   float: $float-direction;
+// }
+
