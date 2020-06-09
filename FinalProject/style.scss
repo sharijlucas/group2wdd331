@@ -2,10 +2,17 @@ $color-1: #e79614; // Dixie Orange
 $color-2: #004a87; // Congress Blue
 $color-3: #57853c; // Fern Green
 $color-4: #da324b; // Cerise Red
+<<<<<<< HEAD
 $color-5: #d7f6f6; // Polar Blue-green
+=======
+//$color-4: #e7d543; // Ronchi Lime 
+$color-5: #d7f6f6; // Polar Blue-green
+//$color-6: #ec7f24; // Tango Orange
+
+>>>>>>> ea335d0bb189f636c13fd3c287f5b52c405f7ea0
 
 body {
     margin: 0; 
     padding: 0; 
     background-color: $color-4;
-}
+} 
