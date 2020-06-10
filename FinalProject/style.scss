@@ -1,18 +1,67 @@
-$color-1: #e79614; // Dixie Orange
-$color-2: #004a87; // Congress Blue
-$color-3: #57853c; // Fern Green
-$color-4: #da324b; // Cerise Red
-<<<<<<< HEAD
-$color-5: #d7f6f6; // Polar Blue-green
-=======
-//$color-4: #e7d543; // Ronchi Lime 
-$color-5: #d7f6f6; // Polar Blue-green
-//$color-6: #ec7f24; // Tango Orange
-
->>>>>>> ea335d0bb189f636c13fd3c287f5b52c405f7ea0
+@import 'src/scss/partials/reset';
+@import 'src/scss/partials/layout';
+@import 'src/scss/partials/colors';
+@import 'src/scss/partials/typography';
 
 body {
-    margin: 0; 
+    margin: 0 auto; 
     padding: 0; 
-    background-color: $color-4;
-} 
+    background-color: $color-8;
+}
+
+//sample for how we changed partial _layout.scss
+// .cd-logo {
+//     /* logo box style */
+//     background-color: $color-1;
+//     width: 120px;
+  
+//     //MQ = media query
+//     @include MQ(break-medium) {
+//       width: 180px;
+//     }
+//   }
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px;
+}
+
+h3 {
+   color: $color-1;
+   padding: 20px;
+   font-weight: bold;
+   font-family: 'Chelsea Market, cursive';
+   font-size: 1.5rem;
+   border: 5px solid $color-1;
+   border-radius: 50%;
+   width: 20rem;
+   height: 1.5rem;
+   text-align: center;
+}
+
+.summary {
+    border: 1px red solid;
+}
+
+p {
+    padding: 20px;
+}
+
+@include MQ(break-medium){
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.intro {
+    grid-column: 2 / 3;
+    align-self: center;
+}
+
+.preamble {
+    grid-column: 1 / 2;
+}
+
+}
