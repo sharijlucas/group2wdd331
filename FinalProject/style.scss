@@ -4,7 +4,8 @@
 @import 'src/scss/partials/typography';
 
 body {
-    margin: 0 auto; 
+    margin: 0 auto;
+    max-width: 80%;
     padding: 0; 
     background-color: $color-8;
 }
@@ -21,10 +22,27 @@ body {
 //     }
 //   }
 
-.page-wrapper {
+// header:after {
+//     content: "";
+//     display: block;
+//     clear: both;
+// }
+
+.page-wrapper { 
     display: grid;
     grid-template-columns: 1fr;
     margin: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.page-wrapper footer {
+    position: absolute;
+    bottom: -50px;
+}
+
+footer {
+    margin-top: 20px;
 }
 
 h3 {
@@ -40,28 +58,73 @@ h3 {
    text-align: center;
 }
 
-.summary {
-    border: 1px red solid;
+.wrapper h3 {
+    border: none;
 }
+
+// .summary {
+//     border: 5px red solid;
+// }
 
 p {
     padding: 20px;
 }
 
+
+// ******************************
+// ******************************
 @include MQ(break-medium){
+
+
 
 .page-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat (5, 1fr);
 }
 
-.intro {
+header {
     grid-column: 2 / 3;
-    align-self: center;
+    grid-row: 1 / 2;
+    // align-content: right;
 }
 
-.preamble {
+// .intro { //CSS Zen Garden thru line 107 Footer
+//     grid-column: 1 / 2;
+//     // align-self: center;
+// }
+
+.summary { // a demo of what can be...
+    grid-column: 2 / 3;
+}
+
+.preamble { //road to enlightenment
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.explanation { // So What is this about?
+    grid-column: 1 / 3;
+}
+
+// .main.supporting:last-child {
+//     grid-column: 1 / 3;
+// }
+
+.main.supporting {
     grid-column: 1 / 2;
 }
+// .main:last-child {
+//     grid-column: 1 / 3;
+//     }
 
+.wrapper,
+.sidebar {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.benefits {
+    grid-column: 1 / 2;
+}
 }
