@@ -4,6 +4,9 @@
 @import 'src/scss/partials/typography';
 
 body {
+    background-image: url("src/blue-textile-1078981.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 150%; //make large view 100% 100%
     margin: 0 auto;
     max-width: 80%;
     padding: 0; 
@@ -28,6 +31,15 @@ body {
 //     clear: both;
 // }
 
+h1 {
+    font-size: 2em;
+    color: $color-8;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: $color-8;
+}
 .page-wrapper { 
     display: grid;
     grid-template-columns: 1fr;
@@ -41,6 +53,35 @@ body {
     bottom: -50px;
 }
 
+.preamble, .main.supporting {
+    color: $color-8;
+}
+
+.summary {
+    text-shadow: 2px 2px 5px $color-8;
+    color: $color-8;
+}
+.main.supporting, .intro a:link {
+    color: $color-8;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.main.supporting  a:hover {
+    text-decoration: underline;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}
+
+.requirements {
+    text-shadow: 2px 2px 5px $color-7;
+}
 footer {
     margin-top: 20px;
 }
@@ -49,12 +90,12 @@ h3 {
    color: $color-1;
    padding: 20px;
    font-weight: bold;
-   font-family: 'Chelsea Market, cursive';
+   font-family: $header-font;
    font-size: 1.5rem;
    border: 5px solid $color-1;
    border-radius: 50%;
    width: 20rem;
-   height: 1.5rem;
+   height: 2.5rem;
    text-align: center;
 }
 
@@ -68,14 +109,31 @@ h3 {
 
 p {
     padding: 20px;
+    font-family: $body-font;
+    text-shadow: 2px 2px 5px $color-7;
 }
+
+.design-selection, .design-archives, .zen-resources {
+    // background-color: lighten($color-8, 25%); 
+    background: rgba(255, 255, 255, 0.2);
+    opacity: .75;
+    padding: 20px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+
+
 
 
 // ******************************
 // ******************************
 @include MQ(break-medium){
 
-
+body {
+    background-size: 100% 100%;
+}
 
 .page-wrapper {
     display: grid;
