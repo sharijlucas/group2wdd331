@@ -6,19 +6,22 @@
 body {
     background-image: url("src/blue-textile-1078981.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 150%; //make large view 100% 100%
+    background-size: 100% 132%; //make large view 100% 100%
     margin: 0 auto;
     max-width: 80%;
-    padding: 0; 
+    padding: 0;
     background-color: $color-8;
 }
+
+
+
 
 //sample for how we changed partial _layout.scss
 // .cd-logo {
 //     /* logo box style */
 //     background-color: $color-1;
 //     width: 120px;
-  
+
 //     //MQ = media query
 //     @include MQ(break-medium) {
 //       width: 180px;
@@ -32,34 +35,47 @@ body {
 // }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     color: $color-8;
+    font-family: $header-font;
+    padding-top: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px $color-7;
+
 }
 
-h2 {
+h2, h3 {
     font-size: 1.5em;
     color: $color-8;
+    font-family: $header-font;
+    text-align: center;
+    padding-top: 5px;
+    text-shadow: 2px 2px 5px $color-7;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+
 }
-.page-wrapper { 
-/*    display: grid;
+
+.page-wrapper {
+    /*    display: grid;
     grid-template-columns: 1fr;
     margin: 20px;
     align-items: center; */
     position: relative;
 
-    @include MQ(break-medium){
+    @include MQ(break-medium) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(100px, 1fr);
     }
+}
+
+footer {
+    position: absolute;
+    bottom: -50px;
+}
 
 
-    footer {
-        position: absolute;
-        bottom: -50px;
-    }
-
-} 
 
 /* This is an example of nesting with the ampersand
 The ampersand takes the parent selector and repeats it
@@ -94,9 +110,11 @@ a :hover {
 }
 */
 
-.preamble, 
+.preamble,
 .main.supporting {
     color: $color-8;
+    text-shadow: 2px 2px 5px $color-7;
+
 }
 
 .summary {
@@ -104,7 +122,7 @@ a :hover {
     color: $color-8;
 }
 
-.main.supporting, 
+.main.supporting,
 .intro a:link {
     color: $color-8;
 }
@@ -115,7 +133,7 @@ a:link {
     color: white;
 }
 
-.main.supporting  a:hover {
+.main.supporting a:hover {
     text-decoration: underline;
 }
 
@@ -123,110 +141,158 @@ a:link {
     text-decoration: underline;
 }
 
+
+
+
 .requirements {
     text-shadow: 2px 2px 5px $color-7;
 }
+
 footer {
     margin-top: 20px;
 }
 
-h3 {
-   color: $color-1;
-   padding: 20px;
-   font-weight: bold;
-   font-family: $header-font;
-   font-size: 1.5rem;
-   border: 5px solid $color-1;
-   border-radius: 50%;
-
-   text-align: center;
-
-   @include MQ(break-medium){
-    width: 20rem;
-    height: 2.5rem;
-   }
-}
-
-.wrapper h3 {
-    border: none;
-}
-
-// .summary {
-//     border: 5px red solid;
-// }
-
-p {
+.main.supporting h3 {
+    color: $color-1;
     padding: 20px;
-    font-family: $body-font;
-    text-shadow: 2px 2px 5px $color-7;
-}
-
-.design-selection, .design-archives, .zen-resources {
-    // background-color: lighten($color-8, 25%); 
-    background: rgba(255, 255, 255, 0.2);
-    opacity: .75;
-    padding: 20px;
-    margin: 10px;
-    color: black;
+    font-weight: bold;
+    font-family: $header-font;
+    font-size: 1.5rem;
+    border: 5px solid $color-1;
+    border-radius: 50%;
     text-align: center;
+    text-shadow: 2px 2px 5px $color-7;
+
 }
 
 
+//@include MQ(break-medium) {
+
+    // width: 20rem;
+    // height: 2.5rem;
 
 
 
-// ******************************
-// ******************************
-@include MQ(break-medium){
+   
 
-body {
-    background-size: 100% 100%;
-}
+    .wrapper h3 {
+        border: none;
+        padding-bottom: 20px;
+        color: $color-1;
+        margin-top: 0;
+    }
+
+    // .summary {
+    //     border: 5px red solid;
+    // }
+
+    p {
+        padding: 10px;
+        font-family: $body-font;
+        text-shadow: 2px 2px 5px $color-7;
+        font-size: 1.25rem;
+
+    }
+
+abbr    {
+        text-decoration: none;
+    }
+
+    .design-selection,
+    .design-archives,
+    .zen-resources {
+        // background-color: lighten($color-8, 25%); 
+        background: rgba(255, 255, 255, 0.2);
+        opacity: .75;
+        padding: 20px;
+        margin: 10px;
+        color: white;
+        text-align: center;
+    }
+
+    .design-selection a:hover,
+    .design-archives a:hover,
+    .zen-resources a:hover {
+        text-decoration: underline;
+    }
+
+    // .design-archives a:hover {
+    //     text-decoration: underline;
+    // }
+
+    //  {
+    //     text-decoration: underline;
+    // }
 
 
 
-header {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    // align-content: right;
-}
 
-// .intro { //CSS Zen Garden thru line 107 Footer
-//     grid-column: 1 / 2;
-//     // align-self: center;
-// }
 
-.summary { // a demo of what can be...
-    grid-column: 2 / 3;
-}
+    // ******************************
+    // ******************************
+    @include MQ(break-medium) {
 
-.preamble { //road to enlightenment
-    grid-column: 2 / 3;
-    grid-row: 1;
-}
+        body {
+            background-size: 100% 130%;
+        }
 
-.explanation { // So What is this about?
-    grid-column: 1 / 3;
-}
 
-// .main.supporting:last-child {
-//     grid-column: 1 / 3;
-// }
 
-.main.supporting {
-    grid-column: 1 / 2;
-}
-// .main:last-child {
-//     grid-column: 1 / 3;
-//     }
+        // header {
+        //     grid-column: 2 / 3;
+        //     grid-row: 1 / 2;
+        //     // align-content: right;
+        // }
 
-.wrapper,
-.sidebar {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
+        // .intro { //CSS Zen Garden thru line 107 Footer
+        //     grid-column: 1 / 2;
+        //     // align-self: center;
+        // }
 
-.benefits {
-    grid-column: 1 / 2;
-}
+
+        // .summary { // a demo of what can be...
+        //     grid-column: 2 / 3;
+        // }
+
+        // .preamble { //road to enlightenment
+        //     grid-column: 2 / 3;
+        //     grid-row: 1;
+        //}
+
+        .intro {
+            grid-column: 1 / 3;
+            //  grid-row: 1 / 1;
+            align-content: center;
+            
+        }
+
+        .explanation {
+            // So What is this about?
+            grid-column: 1 / 3;
+        }
+
+        // .main.supporting:last-child {
+        //     grid-column: 1 / 3;
+        // }
+
+
+        .main.supporting {
+            grid-column: 1 / 2;
+        }
+
+        // .main:last-child {
+        //     grid-column: 1 / 3;
+        //     }
+
+        .wrapper,
+        .sidebar {
+            grid-column: 2 / 3;
+            //  grid-row: 2 / 3;
+        }
+
+        .benefits {
+            grid-column: 1 / 2;
+        }
+
+  //  }
 }
