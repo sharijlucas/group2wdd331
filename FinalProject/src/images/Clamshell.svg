@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="768"
+   version="1.1"
+   viewBox="0 0 784.00256 768"
+   width="784.00256"
+   x="0px"
+   xml:space="preserve"
+   y="0px"
+   id="svg316"
+   sodipodi:docname="Clamshell.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata322"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs320" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1001"
+   id="namedview318"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="1.0130208"
+   inkscape:cx="218.26349"
+   inkscape:cy="384"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg316" />
+ <g
+   id="base-layer"
+   transform="matrix(2.0972229,-0.34294371,0.34294371,2.0972229,-54.196404,76.335311)"
+   style="fill:#f4eed7"
+   inkscape:export-filename="C:\Users\Jessica\Desktop\Beach Shapes\PNG Files\Clamshell.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <path
+   d="M 80.513,261.193 C 29.746,222.575 -0.824,196.928 0.017,159.168 c 0.281,-16.141 22.157,-34.01 26.644,-44.674 7.013,-17.005 1.403,-48.13 21.037,-64.56 19.913,-16.137 27.205,-4.613 45.155,-12.107 18.231,-7.49 13.181,-34.01 38.425,-36.602 25.243,-2.881 31.693,12.103 49.642,15.566 17.671,3.456 23.28,-21.907 46.56,-15.855 23.279,6.051 24.12,28.822 40.95,43.235 16.546,14.698 32.532,4.609 49.362,20.175 16.826,15.273 3.926,34.006 12.62,50.147 8.413,16.43 16.546,10.664 25.242,28.244 8.692,17.583 -6.448,46.116 -4.767,54.474 1.682,8.073 14.863,35.453 6.171,57.931 -8.415,22.481 -102.093,42.945 -116.959,43.524 -14.864,0.574 -10.657,38.044 -15.426,52.164 -5.048,14.123 -49.082,10.086 -84.701,0.289 -35.341,-9.511 -55.814,-26.805 -65.913,-38.623 -10.374,-11.811 17.954,-36.31 6.454,-51.303 z m 34.778,-4.319 C 97.901,205.57 76.866,144.181 70.976,88.558 68.172,63.195 49.662,54.548 53.308,90.286 c 5.888,54.47 35.338,116.727 61.983,166.588 z m 26.084,2.882 C 129.596,194.906 139.974,79.043 139.974,47.054 140.253,15.347 126.79,19.67 122.583,46.479 c -5.328,34.006 -7.572,147.852 18.792,213.277 z M 201.956,41.862 C 171.386,126.597 162.972,222.575 163.253,266.96 175.312,229.205 204.482,108.443 220.188,58.007 229.443,28.028 209.53,26.3 201.956,41.862 Z m -22.157,229.996 c 42.352,-36.602 92.837,-125.085 108.544,-163.994 16.548,-40.636 -6.452,-36.027 -16.828,-15.848 -17.67,34.007 -58.619,127.389 -91.716,179.842 z m 20.476,4.902 c 59.74,-25.941 108.823,-85.023 128.175,-109.233 19.072,-24.499 6.453,-39.197 -12.901,-16.137 -19.353,22.766 -65.632,87.326 -115.274,125.37 z m 20.193,4.613 c 40.67,-2.885 89.751,-25.652 108.262,-34.874 18.229,-8.937 16.548,-22.771 -1.963,-14.991 -18.511,7.498 -71.52,40.35 -106.299,49.865 z M 88.646,243.614 c -14.024,-14.698 -55.533,-75.509 -60.02,-86.463 -4.489,-10.954 -13.463,-0.868 2.243,23.631 15.707,24.214 30.01,41.793 57.777,62.832 z m 115.555,53.896 c -22.998,0.864 -24.12,4.902 -41.509,7.209 -17.391,2.013 -23,-2.018 -32.816,-11.243 -9.817,-9.511 -25.522,-32.282 -22.437,-22.771 2.804,9.515 15.987,32.57 22.998,42.082 7.293,9.511 16.828,14.698 28.889,10.085 12.06,-4.608 33.095,-18.153 44.875,-25.362 z"
+   style="clip-rule:evenodd;fill-rule:evenodd;fill:#f4eed7"
+   id="path313"
+   inkscape:connector-curvature="0">
+  </path>
+ </g>
+</svg>
