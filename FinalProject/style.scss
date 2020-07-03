@@ -35,28 +35,26 @@ body {
 // }
 
 h1 {
-
     margin-top: 20px;
-    // font-size: 10vmin;
-    font-size: 2.5rem;
+    line-height: 10rem;
+    font-size: 9vw;
     color: $color-8;
     font-family: $header-font;
-    padding-top: 2.5rem;
+    // padding-top: 2.5rem;
     text-align: center;
-   
-    text-shadow: 7px 7px 5px $color-7;
+    text-shadow: 5px 5px 5px $color-7;
     background-image: url(src/images/surfboard1-layerstogether.svg);
+    background-repeat: round space;
 
     @include MQ(break-medium) {
-        line-height: 20rem;
-        font-size: 5rem;
-        // line-height: 20vmin;   
+        line-height: 15rem;
+        text-shadow: 7px 7px 5px $color-7;   
     }
 
 }
 
 h2, h3 {
-    font-size: 1.5em;
+    font-size: 3.5vw;
     color: $color-8;
     font-family: $header-font;
     text-align: center;
@@ -88,13 +86,13 @@ footer {
     bottom: -50px;
 
     @include MQ(break-medium){
-        left: 7px;
+        left: 6px;
     }
 }
 
 footer a {
     padding: 6px;
-    transition: 1.5s;
+    transition: 2s;
 
         &:visited {
             color: #f8f8ff;//off-white
@@ -189,14 +187,18 @@ a:visited {
     padding: 20px;
     font-weight: bold;
     font-family: $header-font;
-    font-size: 1.5rem;
+    font-size: 4vw;
     border: 5px solid $color-1;
     border-radius: 15% 50% 50% 15%;
     box-shadow: 2px 2px 5px $color-7;
     text-align: center;
     text-shadow: 2px 2px 5px $color-7;
     &:hover {
-    transform: rotate(15deg);
+    transform: rotate(11.25deg);
+    }
+
+    @include MQ(break-medium){
+        font-size: 3vw;   
     }
 }
 
@@ -218,7 +220,12 @@ p {
     padding: 10px;
     font-family: $body-font;
     text-shadow: 2px 2px 5px $color-7;
-    font-size: 1.25rem;
+    font-size: 4vw;
+    line-height: 140%;
+
+    @include MQ(break-medium){
+        font-size: 2vw;   
+    }
 }
 
 abbr {
@@ -248,6 +255,7 @@ abbr {
 .design-selection h3 {
     color: ($color-6, 10%);
     font-weight: bold;
+    font-size: 4vw;
 }
 
 
