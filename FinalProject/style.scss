@@ -13,9 +13,9 @@ body {
     background-color: $color-8;
 }
 
-
-
-
+//  *********************************
+//  Brother Blaylock's Example
+//  *********************************
 //sample for how we changed partial _layout.scss
 // .cd-logo {
 //     /* logo box style */
@@ -53,7 +53,6 @@ h2, h3 {
     text-shadow: 2px 2px 5px $color-7;
     margin-top: 3rem;
     margin-bottom: .5rem;
-
 }
 
 .page-wrapper {
@@ -72,11 +71,43 @@ h2, h3 {
 
 footer {
     position: absolute;
+    left: 10px;
     bottom: -50px;
+    // background-image: url(src/images/starfish.svg);
 }
 
+// .zen-validate-html:nth-child(odd)
+// .zen-validate-css
+// .zen-license
+// .zen-accessibility
+// .zen-github
 
+// footer a:nth-child(odd) {
+//     background-color: yellow;
+//     //background-image: url(src/images/starfish.svg);
+//     height: 100px;
+//     width: 100px;
+//     color: $color-7;
+// }
 
+// .zen-validate-html {
+    // position: relative;
+    // display: inline-block;
+    // margin: 0 auto;
+    // left: 0;
+    // right: 0;
+    // text-align: center;
+    // width: 25%;
+        // background-color: yellow;
+        // background-image: url(src/images/starfish.svg);
+        // height: 100px;
+        // width: 100px;
+        // color: $color-7; //black
+    // }
+
+// *************************************
+// Brother Blaylock's Example of nesting
+// *************************************
 /* This is an example of nesting with the ampersand
 The ampersand takes the parent selector and repeats it
 where the & is. 
@@ -133,6 +164,10 @@ a:link {
     color: white;
 }
 
+a:visited {
+    color: #f8f8ff;//off-white
+}
+
 .main.supporting a:hover {
     text-decoration: underline;
 }
@@ -166,55 +201,48 @@ footer {
 }
 
 
-//@include MQ(break-medium) {
+// @include MQ(break-medium) {
 
-    // width: 20rem;
-    // height: 2.5rem;
-
-
-
-   
-
-    .wrapper h3 {
-        border: none;
-        padding-bottom: 20px;
-        color: $color-1;
-        margin-top: 0;
-    }
+.wrapper h3 {
+border: none;
+padding-bottom: 20px;
+color: $color-1;
+margin-top: 0;
+}
 
     // .summary {
     //     border: 5px red solid;
     // }
 
-    p {
-        padding: 10px;
-        font-family: $body-font;
-        text-shadow: 2px 2px 5px $color-7;
-        font-size: 1.25rem;
+p {
+    padding: 10px;
+    font-family: $body-font;
+    text-shadow: 2px 2px 5px $color-7;
+    font-size: 1.25rem;
 
-    }
+}
 
-abbr    {
-        text-decoration: none;
-    }
+abbr {
+    text-decoration: none;
+}
 
-    .design-selection,
-    .design-archives,
-    .zen-resources {
-        // background-color: lighten($color-8, 25%); 
-        background: rgba(255, 255, 255, 0.2);
-        opacity: .75;
-        padding: 20px;
-        margin: 10px;
-        color: white;
-        text-align: center;
-    }
+.design-selection,
+.design-archives,
+.zen-resources {
+    // background-color: lighten($color-8, 25%); 
+    background: rgba(255, 255, 255, 0.2);
+    opacity: .75;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
 
-    .design-selection a:hover,
-    .design-archives a:hover,
-    .zen-resources a:hover {
-        text-decoration: underline;
-    }
+.design-selection a:hover,
+.design-archives a:hover,
+.zen-resources a:hover {
+    text-decoration: underline;
+}
 
     // .design-archives a:hover {
     //     text-decoration: underline;
@@ -235,8 +263,6 @@ abbr    {
         body {
             background-size: 100% 130%;
         }
-
-
 
         // header {
         //     grid-column: 2 / 3;
@@ -277,6 +303,11 @@ abbr    {
 
 
         .main.supporting {
+            // so what is this about
+            // participation
+            // benefits
+            // requirements
+            // footer
             grid-column: 1 / 2;
         }
 
