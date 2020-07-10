@@ -3,12 +3,22 @@
 @import 'src/scss/partials/colors';
 @import 'src/scss/partials/typography';
 
-body {
+// body {
+//     //background-image: url("src/images/blue-textile-1078981.jpg");
+//     background-repeat: no-repeat;
+//     background-size: 100% 132%; //make large view 100% 100%
+//     margin: 0 auto;
+//     max-width: 80%;
+//     padding: 0;
+//     background-color: $color-8;
+// }
+
+section {
     background-image: url("src/images/blue-textile-1078981.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 132%; //make large view 100% 100%
+    background-size: 100% 100%; //make large view 100% 100%
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 100%;
     padding: 0;
     background-color: $color-8;
 }
@@ -36,25 +46,37 @@ body {
 
 h1 {
     margin-top: 20px;
-    line-height: 10rem;
-    font-size: 9vw;
+    line-height: 8rem;
+    font-size: 2.5rem;
     color: $color-8;
     font-family: $header-font;
     // padding-top: 2.5rem;
     text-align: center;
     text-shadow: 5px 5px 5px $color-7;
-    background-image: url(src/images/surfboard1-layerstogether.svg);
-    background-repeat: round space;
-
+    //background-image: url(src/images/surfboard1-layerstogether.svg);
+    //background-repeat: round space;
+    //background-repeat: no-repeat;
+    
     @include MQ(break-medium) {
-        line-height: 15rem;
+        line-height: 12rem;
         text-shadow: 7px 7px 5px $color-7;   
+        font-size: 3rem;
     }
-
 }
 
+// //h1:after{
+//  //   content: "";
+//  //   display: block;
+//     width: 100px;
+//     height: 100px;
+//     background: url(src/images/starfish.jpg);
+//     z-index: 3;
+//     border: 1px solid black;
+//     margin: auto;
+// }
+
 h2, h3 {
-    font-size: 3.5vw;
+    font-size: 2rem;
     color: $color-8;
     font-family: $header-font;
     text-align: center;
@@ -62,7 +84,14 @@ h2, h3 {
     text-shadow: 2px 2px 5px $color-7;
     margin-top: 3rem;
     margin-bottom: .5rem;
+
+    @include MQ(break-medium) {
+        font-size: 2.5rem;
+    }
 }
+
+
+
 
 .page-wrapper {
     /*    display: grid;
@@ -95,8 +124,9 @@ footer a {
     transition: 2s;
 
         &:visited {
-            color: #f8f8ff;//off-white
+            color:  $color-2;
         }
+    
 
         &:hover {
             color: $color-6;
@@ -142,32 +172,39 @@ a :hover {
 }
 */
 
-.preamble,
-.main.supporting {
+.preamble {
     color: $color-8;
     text-shadow: 2px 2px 5px $color-7;
 
 }
 
 .summary {
-    text-shadow: 2px 2px 5px $color-8;
+    //text-shadow: 2px 2px 5px $color-8;
     color: $color-8;
 }
 
 .main.supporting,
 .intro a:link {
-    color: $color-8;
+    color: $color-7;
 }
 
+.main.supporting {
+    color: $color-2;
+}
+
+.intro a:link {
+    color: $color-8;
+    font-weight: bold;
+}
 
 a:link {
     text-decoration: none;
-    color: white;
+    color: $color-2;
     font-weight: bold;
 }
 
 a:visited {
-    color: #f8f8ff;//off-white
+    color: $color-2;//off-black
 }
 
 .main.supporting a:hover {
@@ -175,19 +212,21 @@ a:visited {
 }
 
 .intro a:hover {
-    text-decoration: underline;
+    text-decoration: underline;  
 }
 
-.requirements {
-    text-shadow: 2px 2px 5px $color-7;
-}
+// .requirements {
+//     //text-shadow: 2px 2px 5px $color-7;
+// }
+
+
 
 .main.supporting h3 {
     color: $color-1;
     padding: 20px;
     font-weight: bold;
     font-family: $header-font;
-    font-size: 4vw;
+    font-size: 2rem;
     border: 5px solid $color-1;
     border-radius: 15% 50% 50% 15%;
     box-shadow: 2px 2px 5px $color-7;
@@ -198,7 +237,7 @@ a:visited {
     }
 
     @include MQ(break-medium){
-        font-size: 3vw;   
+        font-size: 2.25rem;   
     }
 }
 
@@ -219,12 +258,12 @@ margin-top: 0;
 p {
     padding: 10px;
     font-family: $body-font;
-    text-shadow: 2px 2px 5px $color-7;
-    font-size: 4vw;
+    //text-shadow: 2px 2px 5px $color-7;
+    font-size: 1rem;
     line-height: 140%;
 
     @include MQ(break-medium){
-        font-size: 2vw;   
+        font-size: 1.25rem;   
     }
 }
 
@@ -237,13 +276,13 @@ abbr {
 .zen-resources {
     // background-color: lighten($color-8, 25%); 
     background: rgba(255, 255, 255, 0.2);
-    opacity: .75;
+    //opacity: .75;
     padding: 20px;
     margin: 35px;
     border-radius: 10px;
-    color: white;
+    color: $color-7;
     text-align: center;
-    border: 2px dashed white;
+    border: 2px dashed $color-7;
 }
 
 .design-selection a:hover,
@@ -253,9 +292,9 @@ abbr {
 }
 
 .design-selection h3 {
-    color: ($color-6, 10%);
+    color: ($color-7, 10%);
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 2.5rem;
 }
 
 
