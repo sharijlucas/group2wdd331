@@ -70,7 +70,7 @@ h1::after {
     content: url(src/images/sanddollar-sm.png);
     //font-size: 20px;//CAN'T FIGURE OUT SIZING - SIZED DOWN WITH PHOTOSHOP INSTEAD
     z-index:3;
-    position: absolute;
+    position: relative;
 }
 
 // //h1:after{
@@ -241,10 +241,12 @@ a:visited {
     box-shadow: 2px 2px 5px $color-7;
     text-align: center;
     text-shadow: 2px 2px 5px $color-7;
+
     &:hover {                   /****************************ADDED AFTER OUR MEETING*****/
     transform: rotate(355deg); //CHANGED FROM 11.25deg which what pointing down - Now points up//
+    }
 
-    @include MQ(break-medium){
+    @include MQ(break-medium) {
         font-size: 2.25rem;   
     }
 }
@@ -311,7 +313,8 @@ abbr {
     content: url(src/images/surfboard-sm.png);
     //font-size: 20px;//CAN'T FIGURE OUT SIZING - SIZED DOWN INSTEAD
     z-index:3;
-    position: absolute;
+    display: block;
+    position: relative;
     align-self: center;
 }
 
@@ -320,17 +323,15 @@ abbr {
 .zen-resources::after {
     content: url(src/images/wave-sm.png);
     //font-size: 20px;//CAN'T FIGURE OUT SIZING & POSITIONING - SIZED DOWN INSTEAD
-    display: block;
     z-index:3;
-    position: flex; //DIFFERENT FROM STARFISH & SURFBOARD WHICH ARE ABSOLUTE
+    display: block;
+    position: relative; //DIFFERENT FROM STARFISH & SURFBOARD WHICH ARE ABSOLUTE
     align-self: center;
-    padding-top: 25px;
+    padding: 25px;
 }
 
-
-
-    // ******************************
-    // ******************************
+// ******************************
+// ******************************
     @include MQ(break-medium) {
 
     body {
@@ -397,6 +398,4 @@ abbr {
     .benefits {
         grid-column: 1 / 2;
     }
-
-}
 }
