@@ -267,6 +267,10 @@ color: $color-1;
 margin-top: 0;
 }
 
+.wrapper {
+    margin-top: 50px;
+}
+
     // .summary {
     //     border: 5px red solid;
     // }
@@ -277,6 +281,7 @@ p {
     //text-shadow: 2px 2px 5px $color-7;
     font-size: 1rem;
     line-height: 140%;
+    font-weight: 600;
 
     @include MQ(break-medium){
         font-size: 1.25rem;   
@@ -294,17 +299,44 @@ abbr {
     background: rgba(255, 255, 255, 0.2);
     //opacity: .75;
     padding: 20px;
+    //padding-left: 50px;
     margin: 35px;
     border-radius: 10px;
     color: $color-7;
    // text-align: center;
     border: 2px dashed $color-7;
+    line-height: 1.5rem;
+    
 }
 
 .design-selection a:hover,
 .design-archives a:hover,
 .zen-resources a:hover {
     text-decoration: underline;
+}
+
+.design-selection,
+.design-name,
+.design-archives,
+.zen-resources {
+    display: block;
+    margin-top: 0.5em;
+   // font-family: ';
+    font-size: 1.2em;
+    font-style: italic;
+    text-transform: uppercase;
+      
+}
+
+
+
+.design-name {
+    text-transform: uppercase;
+    color: #004a87;
+  }
+
+.designer-name {
+    font-style: normal;
 }
 
 // .design-selection h3 {
@@ -322,11 +354,20 @@ abbr {
     display: block;
     position: relative;
     align-self: center;
+    width: 100%;
+}
+
+.design-archives h3::after {
+    content: url(src/images/seahorse2_sm.png);
+    //font-size: 20px;//CAN'T FIGURE OUT SIZING - SIZED DOWN WITH PHOTOSHOP INSTEAD
+    z-index:3;
+    position: relative;
+    width: 100%;
 }
 
 /****************************ADDED AFTER OUR MEETING*****/
 
-.zen-resources::after {
+.zen-resources h3::after {
     content: url(src/images/wave-sm.png);
     //font-size: 20px;//CAN'T FIGURE OUT SIZING & POSITIONING - SIZED DOWN INSTEAD
     z-index:3;
@@ -334,6 +375,7 @@ abbr {
     position: relative; //DIFFERENT FROM STARFISH & SURFBOARD WHICH ARE ABSOLUTE
     align-self: center;
     padding: 25px;
+    width: 100%;
 }
 
 // ******************************
