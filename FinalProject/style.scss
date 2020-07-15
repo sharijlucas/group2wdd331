@@ -8,9 +8,15 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%; //make large view 100% 100%
     margin: 0 auto;
-    //max-width: 80%;
+    max-width: 80%;
     padding: 0;
     background-color: $color-8;
+
+    //MQ = media query
+    @include MQ(break-medium) {
+      max-width: 960px;
+    }
+
 }
 
 // section {
@@ -291,7 +297,7 @@ abbr {
     margin: 35px;
     border-radius: 10px;
     color: $color-7;
-    text-align: center;
+   // text-align: center;
     border: 2px dashed $color-7;
 }
 
