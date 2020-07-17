@@ -6,49 +6,17 @@
 body {
     background-image: url("src/images/blue-textile-1078981(1).jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%; //make large view 100% 100%
+    background-size: 100% 100%; 
     margin: 0 auto;
     max-width: 80%;
     padding: 0;
     background-color: $color-8;
 
-    //MQ = media query
     @include MQ(break-medium) {
       max-width: 960px;
     }
 
 }
-
-// section {
-//     background-image: url("src/images/clamshell.png");
-//     background-repeat: no-repeat;
-//     background-size: 100% 100%; //make large view 100% 100%
-//     margin: 0 auto;
-//     max-width: 100%;
-//     padding: 0;
-//     background-color: $color-8;
-//}
-
-//  *********************************
-//  Brother Blaylock's Example
-//  *********************************
-//sample for how we changed partial _layout.scss
-// .cd-logo {
-//     /* logo box style */
-//     background-color: $color-1;
-//     width: 120px;
-
-//     //MQ = media query
-//     @include MQ(break-medium) {
-//       width: 180px;
-//     }
-//   }
-
-// header:after {
-//     content: "";
-//     display: block;
-//     clear: both;
-// }
 
 h1 {
     margin-top: 20px;
@@ -56,39 +24,21 @@ h1 {
     font-size: 2.5rem;
     color: $color-8;
     font-family: $header-font;
-    // padding-top: 2.5rem;
     text-align: center;
     text-shadow: 5px 5px 5px $color-7;
-    //background-image: url(src/images/surfboard1-layerstogether.svg);
-    //background-repeat: round space;
-    //background-repeat: no-repeat;
     
     @include MQ(break-medium) {
         line-height: 12rem;
-        text-shadow: 7px 7px 5px $color-7;   
         font-size: 3rem;
     }
 }
 
-/****************************ADDED AFTER OUR MEETING*****/
 
 h1::after {
     content: url(src/images/sanddollar-sm.png);
-    //font-size: 20px;//CAN'T FIGURE OUT SIZING - SIZED DOWN WITH PHOTOSHOP INSTEAD
     z-index:3;
     position: relative;
 }
-
-// //h1:after{
-//  //   content: "";
-//  //   display: block;
-//     width: 100px;
-//     height: 100px;
-//     background: url(src/images/starfish.jpg);
-//     z-index: 3;
-//     border: 1px solid black;
-//     margin: auto;
-// }
 
 h2, h3 {
     font-size: 2rem;
@@ -106,20 +56,14 @@ h2, h3 {
 }
 
 
-
-
 .page-wrapper {
-    /*    display: grid;
-    grid-template-columns: 1fr;
-    margin: 20px;
-    align-items: center; */
     position: relative;
 
     @include MQ(break-medium) {
         display: grid;
         grid-gap: 25px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(100px, 1fr);
+        grid-template-rows: repeat(1fr, 100px);
     }
 }
     
@@ -135,66 +79,26 @@ footer {
 }
 
 footer a {
-    padding: 6px;     /****************************ADDED AFTER OUR MEETING*****/
-    transition: 2s;  //SUGGESTION TO CHANGE TO 1S & ADD TO ALL LINKS IN PARAGRAPH?//
+    padding: 6px;     
+    transition: 1s;  
 
         &:visited {
             color:  $color-2;
         }
     
-
         &:hover {
             color: $color-6;
         }
     }
 
 
-
-
-// *************************************
-// Brother Blaylock's Example of nesting
-// *************************************
-/* This is an example of nesting with the ampersand
-The ampersand takes the parent selector and repeats it
-where the & is. 
-
-a {
-    background: red; 
-    &:hover {
-        background: blue;
-    }
-}
-
-This will compile to 
-a {
-    background: red; 
-}
-
-a:hover {
-    background: blue;
-}
-
-Without the ampersand it creates a descendant selector 
-it will compile wrong in this case. 
-
-a {
-    background: red; 
-}
-
-See the space. 
-a :hover {
-    background: blue;
-}
-*/
-
 .preamble {
     color: $color-8;
     text-shadow: 2px 2px 5px $color-7;
-
 }
 
 .summary {
-    //text-shadow: 2px 2px 5px $color-8;
+    text-shadow: 2px 2px 5px $color-7;
     color: $color-8;
 }
 
@@ -219,7 +123,7 @@ a:link {
 }
 
 a:visited {
-    color: $color-2;//off-black
+    color: $color-2;
 }
 
 .main.supporting a:hover {
@@ -229,11 +133,6 @@ a:visited {
 .intro a:hover {
     text-decoration: underline;  
 }
-
-// .requirements {
-//     //text-shadow: 2px 2px 5px $color-7;
-// }
-
 
 
 .main.supporting h3 {
@@ -248,8 +147,8 @@ a:visited {
     text-align: center;
     text-shadow: 2px 2px 5px $color-7;
 
-    &:hover {                   /****************************ADDED AFTER OUR MEETING*****/
-    transform: rotate(355deg); //CHANGED FROM 11.25deg which what pointing down - Now points up//
+    &:hover {                  
+    transform: rotate(355deg); 
     }
 
     @include MQ(break-medium) {
@@ -257,8 +156,6 @@ a:visited {
     }
 }
 
-
-// @include MQ(break-medium) {
 
 .wrapper h3 {
 border: none;
@@ -271,14 +168,9 @@ margin-top: 0;
     margin-top: 50px;
 }
 
-    // .summary {
-    //     border: 5px red solid;
-    // }
-
 p {
     padding: 10px;
     font-family: $body-font;
-    //text-shadow: 2px 2px 5px $color-7;
     font-size: 1rem;
     line-height: 140%;
     font-weight: 600;
@@ -295,18 +187,13 @@ abbr {
 .design-selection,
 .design-archives,
 .zen-resources {
-    // background-color: lighten($color-8, 25%); 
-    background: rgba(255, 255, 255, 0.2);
-    //opacity: .75;
+    background: rgba(255, 255, 255, 0.3);
     padding: 20px;
-    //padding-left: 50px;
     margin: 35px;
     border-radius: 10px;
     color: $color-7;
-   // text-align: center;
     border: 2px dashed $color-7;
-    line-height: 1.5rem;
-    
+    line-height: 1.5rem; 
 }
 
 .design-selection a:hover,
@@ -321,126 +208,71 @@ abbr {
 .zen-resources {
     display: block;
     margin-top: 0.5em;
-   // font-family: ';
     font-size: 1.2em;
     font-style: italic;
-    text-transform: uppercase;
-      
+    text-transform: uppercase; 
 }
-
-
 
 .design-name {
     text-transform: uppercase;
     color: #004a87;
-  }
+}
 
 .designer-name {
     font-style: normal;
 }
 
-// .design-selection h3 {
-//     color: $color-1;
-//     font-weight: bold;
-//     font-size: 2.5rem;
-// }
-
-/****************************ADDED AFTER OUR MEETING*****/
-
 .design-selection h3::after {
-    content: url(src/images/surfboard-sm.png);
-    //font-size: 20px;//CAN'T FIGURE OUT SIZING - SIZED DOWN INSTEAD
+    content: url(src/images/surfboard_final.png);
     z-index:3;
     display: block;
     position: relative;
     align-self: center;
     width: 100%;
+    padding-top: 10px;
 }
 
 .design-archives h3::after {
-    content: url(src/images/seahorse2_sm.png);
-    //font-size: 20px;//CAN'T FIGURE OUT SIZING - SIZED DOWN WITH PHOTOSHOP INSTEAD
+    content: url(src/images/seahorse2_final.png);
     z-index:3;
     position: relative;
     width: 100%;
 }
 
-/****************************ADDED AFTER OUR MEETING*****/
-
 .zen-resources h3::after {
-    content: url(src/images/wave-sm.png);
-    //font-size: 20px;//CAN'T FIGURE OUT SIZING & POSITIONING - SIZED DOWN INSTEAD
+    content: url(src/images/wave-final.png);
     z-index:3;
     display: block;
-    position: relative; //DIFFERENT FROM STARFISH & SURFBOARD WHICH ARE ABSOLUTE
+    position: relative; 
     align-self: center;
-    padding: 25px;
+    padding-top: 25px;
     width: 100%;
 }
 
-// ******************************
-// ******************************
+
     @include MQ(break-medium) {
 
     body {
         background-size: 100% 100%;
     }
 
-    // header {
-    //     grid-column: 2 / 3;
-    //     grid-row: 1 / 2;
-    //     // align-content: right;
-    // }
-
-    // .intro { //CSS Zen Garden thru line 107 Footer
-    //     grid-column: 1 / 2;
-    //     // align-self: center;
-    // }
-
-
-    // .summary { // a demo of what can be...
-    //     grid-column: 2 / 3;
-    // }
-
-    // .preamble { //road to enlightenment
-    //     grid-column: 2 / 3;
-    //     grid-row: 1;
-    //}
-
     .intro {
         grid-column: 1 / 3;
-        //  grid-row: 1 / 1;
         align-content: center;
         
     }
 
     .explanation {
-        // So What is this about?
         grid-column: 1 / 3;
     }
 
-    // .main.supporting:last-child {
-    //     grid-column: 1 / 3;
-    // }
-
-
     .main.supporting {
-        // so what is this about
-        // participation
-        // benefits
-        // requirements
-        // footer
         grid-column: 1 / 2;
     }
-
-    // .main:last-child {
-    //     grid-column: 1 / 3;
-    //     }
 
     .wrapper,
     .sidebar {
         grid-column: 2 / 3;
-        //  grid-row: 2 / 3;
     }
 
     .benefits {
